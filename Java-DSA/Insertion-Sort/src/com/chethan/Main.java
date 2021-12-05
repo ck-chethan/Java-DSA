@@ -27,9 +27,9 @@ public class Main {
             }
         }
     }
-    static void swap2elements(int[] arr, int maxElementIndex, int last) {
-        int temp = arr[maxElementIndex];
-        arr[maxElementIndex] = arr[last];
-        arr[last] = temp;
+    static void swap2elements(int[] arr, int first, int second) {
+        int temp = arr[first];
+        arr[first] = arr[second];
+        arr[second] = temp;
     }
 }
