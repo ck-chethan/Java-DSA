@@ -14,10 +14,13 @@ public class Main {
     static void sort(int[] arr){
         int i = 0;
         while(i< arr.length){
-            if(arr[i] != i+1){
-                swap2elements(arr, i, arr[i]-1);
+            int correct = arr[i] - 1;
+            if(arr[i] != arr[correct]) {
+                swap2elements(arr, i, correct);
             }
-            i++;
+            else{
+                i++;
+            }
         }
     }
 
